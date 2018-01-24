@@ -60,6 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.each { |holiday, supplies|
+    holiday_arr = holiday.split
     puts holiday.to_s
     supplies.each { |attribute, value| puts "#{attribute.to_s}: #{value}" }
   }
