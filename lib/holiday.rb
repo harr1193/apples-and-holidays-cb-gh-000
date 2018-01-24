@@ -60,12 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.each { |holiday, supplies|
-    if holiday.to_s.contains(" ") {
-      holiday_arr = holiday.to_s.split(" ")
-      holiday_arr = holiday_arr.each { |word| word.capitalize}
-      holiday = holiday_arr.join
-    }
-    puts "#{holiday}:"
+    holiday.to_s
     supplies.each { |attribute, value| puts "#{attribute.to_s}: #{value}" }
   }
 
