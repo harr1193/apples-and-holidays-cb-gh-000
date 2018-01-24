@@ -62,6 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each { |holiday, supplies|
     holiday_arr = holiday.split
     holiday_arr.capitalize
+    holiday = holiday_arr.join
     puts holiday.to_s
     supplies.each { |attribute, value| puts "#{attribute.to_s}: #{value}" }
   }
